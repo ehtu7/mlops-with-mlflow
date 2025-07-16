@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/ehtmazha/OneDrive%20-%20Publicis%20Groupe/Desktop/AIPormt/mlops-with-mlflow/src/mlruns/0/79545303b7d64a4e9a5a2f3f957b44fe/artifacts
+end_time: 1752643563098
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 79545303b7d64a4e9a5a2f3f957b44fe
+run_name: nimble-boar-589
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752643562982
+status: 3
+tags: []
+user_id: ehtmazha
