@@ -7,6 +7,8 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import dagshub
+dagshub.init(repo_owner='ehtu7', repo_name='mlops-with-mlflow', mlflow=True)
 wine = load_wine()
 X = wine.data
 y = wine.target
@@ -19,7 +21,7 @@ max_depth = 10
 n_estimators = 5
 
 # Mention your experiment below
-mlflow.set_experiment('YT-MLOPS-Exp2')
+mlflow.set_experiment('dagshub-MLOPS-EXP')
 
 
 
@@ -46,7 +48,7 @@ with mlflow.start_run():
     plt.close()
     # # Log confusion matrix artifact
     mlflow.log_artifact("confusion_matrix.png")
-    mlflow.log_artifact(__file___)
-    mlflow.sklearn.log_model(rf, "RandomForestClassifier")
+   
+    # mlflow.sklearn.log_model(rf, "RandomForestClassifier")
     print("Accuracy:", acc)
 
